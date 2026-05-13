@@ -28,8 +28,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-[12px] left-[12px] right-[12px] z-50 transition-all duration-300 border-b border-stone-900/10",
-        isScrolled ? "bg-stone-50/95 backdrop-blur-md py-4" : "bg-stone-50 py-8"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-stone-900/5",
+        isScrolled ? "bg-stone-50/95 backdrop-blur-md py-4 shadow-sm" : "bg-stone-50 py-6"
       )}
     >
       <div className="mx-auto w-full px-6 lg:px-12">
@@ -73,7 +73,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-stone-50 px-6 py-6 border-[12px] border-white">
+        <div className="lg:hidden fixed inset-0 z-50 bg-stone-50 px-6 py-6 shadow-2xl">
           <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5 flex flex-col" onClick={() => setIsOpen(false)}>
               <span className="font-serif text-xl font-bold tracking-tight text-stone-900">

@@ -15,16 +15,16 @@ export function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {IMAGES.portfolio.map((img, i) => (
-             <div key={i} className="group relative overflow-hidden aspect-[3/4] bg-stone-200 border border-stone-900/10">
+             <div key={i} className="group relative overflow-hidden aspect-[3/4] bg-stone-100 rounded-3xl shadow-sm border border-stone-900/5">
                <img 
                  src={img} 
                  alt={`Minimalist Modern Design Portfolio - Project ${i + 1}`} 
-                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-in-out mix-blend-multiply opacity-90 hover:opacity-100" 
+                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-in-out opacity-90 hover:opacity-100" 
                />
-               <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/10 transition-colors duration-500" />
-               <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                 <span className="text-white font-serif italic text-xl drop-shadow-md">Project 0{i+1}</span>
-                 <span className="text-[10px] uppercase tracking-widest text-white/80 font-bold border-b border-white/40 pb-1">View</span>
+               <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors duration-500" />
+               <div className="absolute bottom-8 left-8 right-8 flex justify-between items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                 <span className="text-white font-serif italic text-2xl drop-shadow-md">Project 0{i+1}</span>
+                 <span className="text-[10px] uppercase tracking-widest text-white font-bold pb-1 underline decoration-white/50 underline-offset-4">View</span>
                </div>
              </div>
           ))}
@@ -35,7 +35,7 @@ export function Portfolio() {
               href={BUSINESS_INFO.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full max-w-sm py-5 bg-stone-900 hover:bg-stone-800 text-white text-center text-[10px] uppercase tracking-[0.3em] font-bold transition-colors"
+              className="block w-full max-w-sm py-5 bg-accent hover:bg-accent-hover text-white rounded-full shadow-sm text-center text-[10px] uppercase tracking-[0.3em] font-bold transition-colors"
             >
               Start your own project
             </a>

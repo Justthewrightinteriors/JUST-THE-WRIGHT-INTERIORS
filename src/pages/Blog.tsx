@@ -43,18 +43,18 @@ export function Blog() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {BLOG_POSTS.map((post, index) => (
-            <article key={index} className="flex flex-col items-start border border-stone-900/10 overflow-hidden group">
-              <div className="relative w-full aspect-[3/2] overflow-hidden bg-stone-200">
+            <article key={index} className="flex flex-col items-start border border-stone-900/5 bg-white rounded-3xl shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+              <div className="relative w-full aspect-[3/2] overflow-hidden bg-stone-100">
                 <img 
                   src={post.img} 
                   alt={post.title} 
-                  className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-700" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
-                <div className="absolute top-4 left-4 border border-white/20 bg-stone-900/40 backdrop-blur-md px-3 py-1 text-[9px] uppercase tracking-widest font-bold text-white">
+                <div className="absolute top-4 left-4 border border-white/40 bg-white/70 text-stone-900 backdrop-blur-md px-4 py-1.5 rounded-full text-[9px] uppercase tracking-widest font-bold">
                   {post.category}
                 </div>
               </div>
-              <div className="p-8 pb-10 bg-white w-full flex-grow flex flex-col">
+              <div className="p-8 pb-10 w-full flex-grow flex flex-col">
                 <div className="flex items-center gap-x-4 text-[10px] uppercase tracking-widest font-bold text-stone-400 mb-4">
                   <time dateTime={post.date}>
                     {post.date}
@@ -63,16 +63,18 @@ export function Blog() {
                   <span>{post.readTime}</span>
                 </div>
                 <h3 className="mt-3 text-2xl font-serif italic text-stone-900 leading-tight mb-4">
-                  <a href="#">
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </a>
+                  {post.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-stone-600 mb-8 flex-grow font-serif italic">
+                <p className="text-sm leading-relaxed text-stone-600 mb-10 flex-grow font-serif italic">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-x-2 text-[10px] uppercase tracking-[0.2em] font-bold text-stone-900 border-b border-stone-900 pb-1 w-max opacity-80 group-hover:opacity-100 transition-opacity">
-                  Read article &rarr;
+                <div className="mt-auto w-full pt-4">
+                  <a 
+                    href="#" 
+                    className="block w-full py-4 bg-transparent border border-stone-900/20 hover:border-stone-900 text-stone-900 rounded-full text-center text-[10px] uppercase tracking-[0.3em] font-bold transition-colors"
+                  >
+                    Read More
+                  </a>
                 </div>
               </div>
             </article>

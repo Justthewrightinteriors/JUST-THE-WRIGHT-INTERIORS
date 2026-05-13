@@ -32,13 +32,13 @@ export function Home() {
 
         {/* Image Grid / Portfolio Teaser */}
         <section className="p-6 lg:p-12 border-t border-stone-900/10">
-          <div className="relative w-full aspect-[16/9] lg:aspect-auto lg:h-96 overflow-hidden group mb-12">
+          <div className="relative w-full aspect-[16/9] lg:aspect-auto lg:h-96 overflow-hidden group mb-12 rounded-3xl shadow-sm">
             <img
               src={IMAGES.hero}
               alt="Luxury interior design living room"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-stone-900/20 flex flex-col items-center justify-center border border-white/20 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="absolute inset-0 bg-stone-900/20 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <h3 className="text-3xl font-serif italic text-white drop-shadow-md">Residential Sanctuary</h3>
             </div>
           </div>
@@ -53,11 +53,11 @@ export function Home() {
                 Meet Jordan D. Wright
               </Link>
             </div>
-            <div className="relative aspect-[3/4]">
+            <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-md">
               <img 
                 src={IMAGES.about} 
                 alt="Modern minimalist aesthetic room" 
-                className="w-full h-full object-cover scale-[0.9] origin-bottom-right"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -102,17 +102,17 @@ export function Home() {
           </Link>
         </section>
 
-        {/* CTA Section matching the black box in design */}
-        <section className="bg-stone-900 text-white p-6 lg:p-12 mx-6 lg:mx-12 mb-12 flex flex-col justify-center">
+        {/* CTA Section */}
+        <section className="bg-stone-100 text-stone-900 rounded-3xl p-8 lg:p-12 mx-6 lg:mx-12 mb-12 flex flex-col justify-center shadow-sm border border-stone-900/5">
           <div className="space-y-4 mb-10 text-center">
-            <h4 className="text-3xl lg:text-4xl font-serif italic text-white leading-tight">Reserve your consultation</h4>
-            <p className="text-[10px] text-white/60 leading-relaxed uppercase tracking-[0.2em]">Guaranteed to meet expectations & leave you smiling.</p>
+            <h4 className="text-3xl lg:text-4xl font-serif italic text-stone-900 leading-tight">Reserve your consultation</h4>
+            <p className="text-[10px] text-stone-500 leading-relaxed uppercase tracking-[0.2em]">Guaranteed to meet expectations & leave you smiling.</p>
           </div>
           <a
             href={BUSINESS_INFO.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full py-5 bg-accent hover:bg-accent-hover text-white text-center text-[10px] uppercase tracking-[0.3em] font-bold transition-colors"
+            className="block w-full py-5 bg-accent hover:bg-accent-hover text-white rounded-full text-center text-[10px] uppercase tracking-[0.3em] font-bold transition-colors shadow-sm"
           >
             Book Appointment
           </a>

@@ -74,10 +74,10 @@ export function Contact() {
 
           
           {/* Contact Form & Booking Widget */}
-          <div className="lg:pt-20">
-            <div className="bg-white p-10 lg:p-12 border border-stone-900/10 relative">
-              <div className="absolute top-0 left-0 w-full h-[6px] bg-accent"></div>
-              <h3 className="font-serif italic text-3xl text-stone-900 mb-8 border-b border-stone-900/10 pb-6">Send a Message</h3>
+          <div className="lg:pt-6">
+            <div className="bg-white p-10 lg:p-12 border border-stone-900/5 shadow-sm rounded-3xl relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-2 bg-accent/80"></div>
+              <h3 className="font-serif italic text-3xl text-stone-900 mb-8 border-b border-stone-900/5 pb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div>
@@ -113,20 +113,20 @@ export function Contact() {
                 </div>
 
                 <div className="pt-4">
-                  <button type="submit" className="w-full bg-stone-900 hover:bg-stone-800 text-white text-[10px] uppercase tracking-[0.3em] font-bold py-5 transition-colors">
+                  <button type="submit" className="w-full rounded-full bg-stone-900 hover:bg-stone-800 text-white text-[10px] uppercase tracking-[0.3em] font-bold py-5 transition-colors shadow-sm">
                     Send Message
                   </button>
                 </div>
               </form>
 
-              <div className="mt-12 pt-10 border-t border-stone-900/10">
+              <div className="mt-12 pt-10 border-t border-stone-900/5">
                 <div className="text-center">
                   <p className="text-xs text-stone-500 mb-6 font-serif italic">Prefer to schedule right away?</p>
                   <a 
                     href={BUSINESS_INFO.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-accent hover:bg-accent-hover text-white py-5 text-[10px] uppercase tracking-[0.3em] font-bold transition-colors text-center"
+                    className="block w-full rounded-full bg-accent hover:bg-accent-hover text-white py-5 text-[10px] uppercase tracking-[0.3em] font-bold transition-colors text-center shadow-sm"
                   >
                     Open Google Calendar
                   </a>

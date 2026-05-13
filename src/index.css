@@ -5,19 +5,19 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   
-  --color-stone-50: #f9f8f6;
-  --color-stone-100: #f4f2ef;
-  --color-stone-200: #e2e0dc;
-  --color-stone-300: #d6d3c9;
-  --color-stone-400: #a8a29e;
-  --color-stone-500: #8c8c8c;
-  --color-stone-600: #4a4a4a;
-  --color-stone-700: #292524;
-  --color-stone-800: #1c1917;
-  --color-stone-900: #1a1a1a;
+  --color-stone-50: #ffffff;
+  --color-stone-100: #faf9f7;
+  --color-stone-200: #f3f1ed;
+  --color-stone-300: #e4e1db;
+  --color-stone-400: #b5b1ab;
+  --color-stone-500: #8a8681;
+  --color-stone-600: #625f5a;
+  --color-stone-700: #4a4844;
+  --color-stone-800: #33312e;
+  --color-stone-900: #21201d;
 
-  --color-accent: #a89078;
-  --color-accent-hover: #967d64;
+  --color-accent: #dca786;
+  --color-accent-hover: #cd936f;
 }
 
 @layer base {

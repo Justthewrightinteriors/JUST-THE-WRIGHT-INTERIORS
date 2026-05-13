@@ -29,16 +29,16 @@ export function About() {
           </div>
           
           <div className="relative lg:sticky top-32">
-            <div className="border-[8px] border-white shadow-xl relative aspect-[3/4] overflow-hidden bg-stone-200">
+            <div className="shadow-lg relative aspect-[3/4] overflow-hidden bg-stone-100 rounded-3xl border border-stone-900/5">
               <img 
                 src={IMAGES.about} 
                 alt="Jordan Wright - Just the Wright Interiors" 
-                className="w-full h-full object-cover mix-blend-multiply opacity-90"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-stone-900 text-stone-50 p-8 pt-10 pl-10 shadow-xl hidden sm:block max-w-[280px]">
-              <h4 className="font-serif italic text-2xl mb-2">Jordan Wright</h4>
-              <p className="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Owner & Operator, defining minimalist luxury in Ohio.</p>
+            <div className="absolute -bottom-6 -right-6 lg:-right-12 bg-white text-stone-900 p-8 pt-10 pl-10 rounded-3xl shadow-xl border border-stone-900/5 hidden sm:block max-w-[280px]">
+              <h4 className="font-serif italic text-2xl mb-2 text-stone-900">Jordan Wright</h4>
+              <p className="text-[10px] uppercase tracking-widest text-stone-500 font-bold">Owner & Operator, defining minimalist luxury in Ohio.</p>
             </div>
           </div>
         </div>
